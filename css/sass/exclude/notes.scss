@@ -1,0 +1,85 @@
+// @import "/file name.scss";
+// ----------------------
+// partial scss fies
+// _filename.scss ||_makes partial
+// partials are not compiled on different files
+// @import "filename" ||calling partial no extention required
+// ----------------------
+// ---------------
+// mixins are used to define styles
+// fuctions are used to compute/return values
+// ----------------------
+// funtions||||
+// @function color($color-name){
+//     @return map-get($colors , $color-name )
+// }
+// background: color(primary);||primary is from variables
+// ----------
+// $variablename: value;
+// color:$variablename;
+// -------
+// & inherits name from parent classes
+// ----
+// class{&:hover{or others}{}}
+// ---------
+// scc map{like objects}
+// $light:(
+// color : lighten($primary,40%);???????css also
+//     primary : #fff,
+//     seconday : #fff6bb
+//     )
+//   background: map-get($light,primary); || objects using
+// ------------
+//   @extend othersection || for inheritance
+body {
+  // we can calculate like width: 11*3;(value=33)||cany mix types
+  margin: 0;
+  padding: 0;
+}
+// -----------
+// {
+// Make component
+// add clipPath
+// add bg
+// add width 100
+// add Height 100
+// position absolute
+// zindex -1}
+// CAN USE CSS CLIPPATH FOR CSS SHAPES!!
+// ------------------
+// !!!!!!MIXINS{
+// like fuctions mixins
+// @mixin name { ||properties collection
+//  margin: 11px;
+//  padding: 10px;
+// }
+// @include name();|| call funtion
+// mixin with arguments--
+// @mixin name($variable) {
+//  margin: 11px;
+//  padding: $variable ;
+// }
+// @include name(10px); ||| call mixin with argument
+// --
+// mixins for changing themes
+// @mixin theme($light-theme:true){
+// @if $light-theme{
+// background: lighten($primary,100%);
+// color: darken($text-color,100%);
+// }
+// .light  {||inside the class we want to change theme of
+// @include theme(true); ||for light theme
+// @include theme(false); ||for dark theme
+// }
+// ------------------
+// using mixins for media querreies
+// $desktop: 644px; || width at which mediaQ applies
+// @mixin desktop {
+// @media (min-width: #{$desktop}){  ||used to use desktop variable
+// @content; what we define in
+// }
+// }
+// @include desktop{  ||used to call mixin ||inside the class we want to use mediaQ
+// width: 11px;  || when mediaQ hits
+// }
+// }

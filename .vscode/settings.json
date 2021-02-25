@@ -1,0 +1,20 @@
+{
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/../portfolio/css"
+             }
+    ],
+
+    "liveSassCompile.settings.excludeList": [
+
+
+
+
+        "**/node_modules/**",
+        ".vscode/**",
+        "css/sass/exclude/*notes.scss"
+    ]
+}
