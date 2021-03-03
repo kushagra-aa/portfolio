@@ -1,1 +1,200 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+.side-bar {
+  background: #b7cfbb;
+  padding: 13px;
+  position: fixed;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 3.5rem;
+  -webkit-box-shadow: 3px 0 12px -2px #535353;
+          box-shadow: 3px 0 12px -2px #535353;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.side-bar #me #me-pic img {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.side-bar #me #name,
+.side-bar #me #sub {
+  display: none;
+}
+
+.side-bar button {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  margin: 1rem 0;
+  padding: 2px;
+}
+
+.side-bar button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.side-bar ul {
+  list-style: none;
+}
+
+.side-bar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 3rem;
+}
+
+.side-bar ul li a {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.side-bar ul li a svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.side-bar ul li a .nav-itm {
+  position: relative;
+  top: -7px;
+  color: black;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: none;
+}
+
+.side-bar a {
+  text-decoration: none;
+}
+
+.side-bar #btm {
+  font-family: "Rajdhani", sans-serif;
+  position: relative;
+  font-size: 15px;
+  bottom: -48px;
+  left: 88px;
+  display: none;
+}
+
+.open {
+  width: 50%;
+}
+
+.open #me #me-pic {
+  position: relative;
+  left: 130px;
+}
+
+.open ul {
+  list-style: none;
+  margin: auto;
+  padding: 2px;
+}
+
+.open ul li a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.open ul li a .nav-itm {
+  padding: 0;
+  display: inline-block;
+}
+
+.open #btm {
+  display: inline-block;
+  color: black;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+* {
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: black;
+}
+
+* ::-moz-selection {
+  background: #b7cfbb;
+  color: white;
+}
+
+* ::selection {
+  background: #b7cfbb;
+  color: white;
+}
+
+body {
+  height: 100vh;
+}
+
+body img {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

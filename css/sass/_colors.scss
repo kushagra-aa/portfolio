@@ -1,21 +1,27 @@
 $light: (
   feat: #e5f3e7,
   nav: #b7cfbb,
-  p-sub: #008080,
-  p-det: #626262,
   skill: #779e7c,
-  s-title: #51ff82,
-  s-sub: #fcff64,
   pro: #deeee0,
-  p-title: #005f5f,
-  p-sub: #585858,
   abt: #cad7cc,
-  a-title: #0b3718,
-  a-sub: #fe5959,
-  a-ab: #444444,
   cnct: #b7cfbb,
+);
+$light-title: (
+  s-title: #51ff82,
+  p-title: #005f5f,
+  a-title: #0b3718,
   c-title: #14b641,
+);
+$light-sub: (
+  feat: #008080,
+  s-sub: #fcff64,
+  p-sub: #585858,
+  a-sub: #fe5959,
   c-sub: #138f36,
+);
+$light-text: (
+  p-det: #626262,
+  a-ab: #444444,
   c-scl: #b2c9b6,
 );
 $home: (
@@ -34,6 +40,7 @@ $hire: (
 $foot: (
   bg: black,
   title: #a8a8a8,
-  link: #bdbbbb line: #7e7e7e,
+  link: #bdbbbb,
+  line: #7e7e7e,
   end: white,
 );
