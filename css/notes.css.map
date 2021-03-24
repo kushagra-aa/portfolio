@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAiCA,AAAA,IAAI,CAAC;EAEH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX",
-    "sources": [
-        "sass/exclude/notes.scss"
-    ],
-    "names": [],
-    "file": "notes.css"
-}
