@@ -1,4 +1,5 @@
 .side-bar {
+  overflow: hidden;
   background: map-get($light, nav);
   padding: 13px;
   position: fixed;

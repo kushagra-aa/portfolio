@@ -1,0 +1,23 @@
+// tick animation
+@keyframes tick {
+  0% {
+    transform: (0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+// scroller animation
+@keyframes scroller {
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}

@@ -1,0 +1,82 @@
+.home {
+  width: 100%;
+  .left {
+    height: 100vh;
+    background-image: url("./../../media/bgH.png");
+    .container {
+      height: 100%;
+      margin: auto;
+      padding: 3.5rem;
+      position: relative;
+      left: -3%;
+      top: 21%;
+      #tick {
+        position: absolute;
+        left: 32%;
+        top: 1%;
+        g {
+          #tick-mark {
+            animation: tick 2s ease-in-out 0s forwards;
+            &:hover {
+              animation: tick 2.5s ease-in-out 0s infinite;
+            }
+            // transition: all;
+          }
+        }
+      }
+      .title {
+        width: 90%;
+        padding: 1rem;
+        position: absolute;
+        left: 0%;
+        top: 21%;
+        text-align: center;
+        h1 {
+          white-space: nowrap;
+          margin: 1rem;
+          color: map-get($home, title);
+          text-transform: uppercase;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 19px;
+          line-height: 122.8%;
+          /* or 26px */
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.04em;
+          text-decoration-line: underline;
+        }
+        p {
+          color: map-get($home, sub);
+          font-family: "Open Sans", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 122.8%;
+          /* or 15px */
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.04em;
+          text-decoration-line: underline;
+          text-transform: uppercase;
+        }
+      }
+      #scroll {
+        position: absolute;
+        left: 36%;
+        top: 47%;
+        #scroll-ball {
+          animation: scroller 1.7s ease 0s infinite;
+          &:hover {
+            animation: none;
+          }
+        }
+      }
+    }
+  }
+}
