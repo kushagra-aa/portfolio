@@ -2,14 +2,16 @@
   width: 100%;
   .left {
     height: 100vh;
-    background-image: url("./../../media/bgH.png");
+    background-image: url("../media/bgH.png");
     .container {
+      display: flex;
       height: 100%;
       margin: auto;
       padding: 3.5rem;
       position: relative;
       left: -3%;
       top: 21%;
+      align-content: ;
       #tick {
         position: absolute;
         left: 32%;
