@@ -1,3 +1,123 @@
 .about {
   background: map-get($light, abt);
+  text-align: center;
+  width: 88%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2,
+  h4 {
+    text-transform: uppercase;
+    font-family: Prompt;
+    font-style: normal;
+    letter-spacing: 0.04em;
+  }
+  h2 {
+    margin-top: 1rem;
+
+    color: map-get($light-title, a-tittle);
+    font-size: 34px;
+    font-weight: bold;
+  }
+  h4 {
+    color: map-get($light-sub, a-sub);
+    font-size: 17px;
+    font-weight: normal;
+  }
+  #abt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    #lft {
+      img {
+        display: block;
+        width: 237px;
+        height: 333px;
+
+        margin: 1rem;
+        margin-left: 4rem;
+        border: 1px solid #a49d9d;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 14px;
+      }
+    }
+    #rt {
+      #up {
+        h1 {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          letter-spacing: 0.04em;
+          .name {
+            font-weight: 700;
+          }
+          margin-bottom: 1em;
+        }
+        p {
+          color: map-get($light-text, a-ab);
+          margin-bottom: 1em;
+          margin-left: 1.2rem;
+          width: 88%;
+
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 175.8%;
+          /* or 23px */
+
+          display: flex;
+          align-items: center;
+          text-align: justify;
+          letter-spacing: 0.02em;
+        }
+      }
+      #dwn {
+        h3 {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          /* or 25px */
+          margin: 1rem;
+
+          text-align: center;
+          letter-spacing: 0.02em;
+          text-decoration-line: underline;
+        }
+        #L,
+        #R {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 8rem;
+          ul {
+            list-style: none;
+            li {
+              height: 35px;
+              width: 79.76px;
+              margin: 1rem;
+              padding: 0.8em;
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 11px;
+              line-height: 136.3%;
+              /* or 16px */
+
+              text-align: center;
+              letter-spacing: 0.02em;
+              border: 1px solid #b6b6b6;
+              box-sizing: border-box;
+              border-radius: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

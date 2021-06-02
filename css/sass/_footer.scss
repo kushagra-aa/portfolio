@@ -1,0 +1,44 @@
+footer {
+  width: 88%;
+  padding: 0.5rem;
+  background: map-get($foot, bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    margin-bottom: 0.5rem;
+    color: map-get($foot, title);
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    a {
+      text-decoration: none;
+      color: map-get($foot, link);
+      text-transform: uppercase;
+    }
+  }
+  hr {
+    margin-bottom: 0.5rem;
+
+    width: 77%;
+    height: 0px;
+    border: 1px solid map-get($foot, line);
+  }
+  p {
+    color: map-get($foot, end);
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+}
