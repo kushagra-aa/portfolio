@@ -1,0 +1,77 @@
+.hire {
+  background: map-get($hire, bg);
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1,
+  h3,
+  a {
+    font-family: Prompt;
+    margin: 0.5em;
+    margin-left: -3rem;
+  }
+  h1 {
+    color: map-get($hire, title);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 99.3%;
+    /* or 18px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+  }
+  h3 {
+    color: map-get($hire, sub);
+    width: 20rem;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 99.3%;
+    /* or 9px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+  }
+  a {
+    text-decoration: none;
+
+    button {
+      background: map-get($hire, btn);
+      color: map-get($hire, title);
+
+      /* or 13px */
+      font-family: Prompt;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      text-align: center;
+      letter-spacing: 0.15em;
+      text-transform: capitalize;
+
+      width: 114px;
+      height: 28px;
+      border-radius: 37.5px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+
+      transition: all ease-in-out 0.7s;
+
+      &:hover {
+        background: darken(map-get($hire, btn), 8%);
+        color: rgb(39, 39, 39);
+      }
+    }
+  }
+}

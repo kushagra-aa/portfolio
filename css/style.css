@@ -484,7 +484,7 @@
 }
 
 .skills .cont {
-  margin: 2rem;
+  margin: 4rem;
   font-family: "Pragati Narrow", sans-serif;
   width: 80%;
   display: -webkit-box;
@@ -573,10 +573,246 @@
   color: #415143;
 }
 
+.hire {
+  background: #4ee36f;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hire h1,
+.hire h3,
+.hire a {
+  font-family: Prompt;
+  margin: 0.5em;
+  margin-left: -3rem;
+}
+
+.hire h1 {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 99.3%;
+  /* or 18px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+}
+
+.hire h3 {
+  color: #7c7c7c;
+  width: 20rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 99.3%;
+  /* or 9px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+}
+
+.hire a {
+  text-decoration: none;
+}
+
+.hire a button {
+  background: #f9e322;
+  color: white;
+  /* or 13px */
+  font-family: Prompt;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+  width: 114px;
+  height: 28px;
+  border-radius: 37.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  -webkit-transition: all ease-in-out 0.7s;
+  transition: all ease-in-out 0.7s;
+}
+
+.hire a button:hover {
+  background: #ecd406;
+  color: #272727;
+}
+
 .projects {
   padding: 1rem;
   height: auto;
   background: #deeee0;
+}
+
+.projects h2 {
+  color: #005f5f;
+  font-family: Prompt;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 122.8%;
+  /* or 64px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-left: -3rem;
+}
+
+.projects h4 {
+  color: #585858;
+  font-family: Prompt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 122.8%;
+  /* identical to box height, or 27px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-left: -3rem;
+}
+
+.projects .projs {
+  margin-left: 6rem;
+  height: 77vh;
+}
+
+.projects .projs img {
+  display: inline-block;
+  position: relative;
+  width: 227.07px;
+  height: 285px;
+  left: -32px;
+  top: 55px;
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+  border-radius: 28px;
+}
+
+.projects .projs h3,
+.projects .projs h1,
+.projects .projs p,
+.projects .projs h5,
+.projects .projs h6 {
+  position: relative;
+  left: -41px;
+  top: 83px;
+  margin: 1rem;
+}
+
+.projects .projs h3 {
+  color: #008080;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.245em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.projects .projs h1 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.15em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+.projects .projs p {
+  color: #626262;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 132.3%;
+  /* or 19px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+}
+
+.projects .projs h5 {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 99.3%;
+  /* or 18px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.15em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+.projects .projs h6 {
+  color: #626262;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 116.8%;
+  /* or 21px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+}
+
+.about {
+  background: #cad7cc;
 }
 
 * {

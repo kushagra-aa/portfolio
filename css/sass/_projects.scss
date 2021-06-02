@@ -2,5 +2,122 @@
   padding: 1rem;
   height: auto;
   background: map-get($light, pro);
+  h2 {
+    color: map-get($light-title, p-title);
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 122.8%;
+    /* or 64px */
 
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    margin-left: -3rem;
+  }
+  h4 {
+    color: map-get($light-sub, p-sub);
+    font-family: Prompt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 122.8%;
+    /* identical to box height, or 27px */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+
+    margin-left: -3rem;
+  }
+  .projs {
+    margin-left: 6rem;
+    height: 77vh;
+    img {
+      display: inline-block;
+      position: relative;
+      width: 227.07px;
+      height: 285px;
+      left: -32px;
+      top: 55px;
+
+      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+      border-radius: 28px;
+    }
+    h3,
+    h1,
+    p,
+    h5,
+    h6 {
+      position: relative;
+
+      left: -41px;
+      top: 83px;
+      margin: 1rem;
+    }
+    h3 {
+      color: map-get($light-sub, feat);
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: 0.245em;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+      white-space: nowrap;
+    }
+    h1 {
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      letter-spacing: 0.15em;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+    }
+    p {
+      color: map-get($light-text, p-det);
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 132.3%;
+      /* or 19px */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.15em;
+      text-transform: capitalize;
+    }
+    h5 {
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 99.3%;
+      /* or 18px */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.15em;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+    }
+    h6 {
+      color: map-get($light-text, p-det);
+
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 116.8%;
+      /* or 21px */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.15em;
+      text-transform: capitalize;
+    }
+  }
 }
