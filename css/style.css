@@ -768,7 +768,7 @@
 }
 
 .projects .projs {
-  margin-left: 6rem;
+  margin-left: 5rem;
   height: 77vh;
 }
 
@@ -1055,7 +1055,7 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 8rem;
+  margin-left: 7rem;
 }
 
 .about #abt #rt #dwn #L ul,
