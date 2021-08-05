@@ -1,3 +1,11 @@
+// preloader
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('loader')
+    preloader.classList.add('load-finish')
+})
+
+
+// menu
 const hamburger = document.querySelector(".ham");
 // for the button
 const sideBar = document.querySelector(".side-bar");

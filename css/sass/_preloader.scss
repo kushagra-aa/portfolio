@@ -1,0 +1,146 @@
+// This Was Adopted from a codepen:
+// https://codepen.io/austinmallar/pen/ExVzrqG
+
+$pencil-green: #abcfb1;
+$pencil-dark: #232123;
+$loader-bg: #daf5e6;
+
+.load-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#loader {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $loader-bg;
+  font-size: 1.5rem;
+  transition: opacity 0.5s ease;
+}
+
+.pencil {
+  @keyframes pencil-animation {
+    0% {
+      transform: rotate(135deg);
+    }
+
+    20% {
+      transform: rotate(315deg);
+    }
+
+    45% {
+      transform: translateX(300px) rotate(315deg);
+    }
+
+    55% {
+      transform: translateX(300px) rotate(495deg);
+    }
+
+    100% {
+      transform: rotate(495deg);
+    }
+  }
+
+  position: relative;
+  width: 300px;
+  height: 40px;
+  transform-origin: center;
+  transform: rotate(135deg);
+  animation: pencil-animation 10s infinite;
+
+  &__ball-point {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $pencil-green;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+  }
+
+  &__cap {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    clip-path: polygon(20% 40%, 100% 0%, 100% 100%, 20% 60%);
+    background: $pencil-dark;
+    width: 12%;
+    height: 100%;
+  }
+
+  &__cap-base {
+    position: absolute;
+    left: 12%;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: $pencil-dark;
+  }
+
+  &__middle {
+    position: absolute;
+    left: calc(12% + 20px);
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background: $pencil-green;
+  }
+
+  &__eraser {
+    position: absolute;
+    left: calc(12% + 70% + 20px);
+    top: 0;
+    height: 100%;
+    width: 11%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: $pencil-dark;
+  }
+}
+
+.line {
+  @keyframes line-animation {
+    20% {
+      transform: scaleX(0);
+    }
+
+    45% {
+      transform: scaleX(0.6);
+    }
+
+    55% {
+      transform: scaleX(0.6);
+    }
+
+    100% {
+      transform: scaleX(0);
+    }
+  }
+
+  position: relative;
+  top: 80px;
+  right: 103px;
+  height: 10px;
+  width: 1000px;
+  z-index: -1;
+  border-radius: 50px;
+  background: $pencil-green;
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: line-animation 10s infinite;
+}
+
+h2 {
+  position: relative;
+  top: 150px;
+  right: 75px;
+}
