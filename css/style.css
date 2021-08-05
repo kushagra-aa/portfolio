@@ -145,7 +145,7 @@
   background: #232123;
 }
 
-.line {
+.pen-line {
   position: relative;
   top: 80px;
   right: 103px;
@@ -200,7 +200,7 @@
   }
 }
 
-h2 {
+.load {
   position: relative;
   top: 150px;
   right: 75px;
