@@ -7,6 +7,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include desktop {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
   h2,
   h4 {
     text-transform: uppercase;
@@ -30,7 +37,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include desktop {
+      flex-direction: row;
+      gap: 12rem;
+      margin: 3rem 0px;
+    }
     #lft {
+      @include desktop {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+      }
       img {
         display: block;
         width: 237px;
@@ -42,6 +59,10 @@
         box-sizing: border-box;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 14px;
+        @include desktop {
+          width: 343.09px;
+          height: 490px;
+        }
       }
     }
     #rt {
@@ -52,8 +73,14 @@
           font-weight: 400;
           font-size: 24px;
           letter-spacing: 0.04em;
+          @include desktop {
+            font-size: 32px;
+          }
           .name {
             font-weight: 700;
+            @include desktop {
+              display: inline;
+            }
           }
           margin-bottom: 1em;
         }
@@ -74,6 +101,15 @@
           align-items: center;
           text-align: justify;
           letter-spacing: 0.02em;
+          @include desktop {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.02em;
+            width: 610px;
+            height: 192px;
+          }
         }
       }
       #dwn {
@@ -89,12 +125,22 @@
           letter-spacing: 0.02em;
           text-decoration-line: underline;
         }
+        #techs {
+          @include desktop {
+            display: flex;
+            justify-content: center;
+            gap: 8rem;
+          }
+        }
         #L,
         #R {
           display: flex;
           flex-direction: column;
           justify-content: center;
           margin-left: 7rem;
+          @include desktop {
+            margin: 0px;
+          }
           ul {
             list-style: none;
             li {

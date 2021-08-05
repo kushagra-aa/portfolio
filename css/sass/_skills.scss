@@ -2,6 +2,13 @@
   padding: 1rem;
   height: auto;
   background: map-get($light, skill);
+  @include desktop {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
   .container {
     // position: absolute;
     margin-left: -3rem;
@@ -37,6 +44,12 @@
     width: 80%;
     display: flex;
     flex-direction: column;
+    @include desktop {
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 2rem;
+    }
     .card {
       display: flex;
       flex-direction: column;
@@ -51,13 +64,22 @@
       background: map-get($skill, card);
       border-radius: 65px;
       filter: drop-shadow(4px 5px 7px rgba(0, 0, 0, 0.25));
-      /* Inside Auto Layout */
       flex: none;
       order: 0;
       flex-grow: 0;
       margin: 16.5px 0px;
+      @include desktop {
+        height: 400px;
+        width: 297px;
+      }
       svg {
         display: none;
+        @include desktop {
+          display: block;
+          height: 90px;
+          width: 95px;
+          margin: 1rem;
+        }
       }
       h3 {
         padding: 1rem;

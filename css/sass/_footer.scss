@@ -6,6 +6,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include desktop {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
   h2 {
     margin-bottom: 0.5rem;
     color: map-get($foot, title);

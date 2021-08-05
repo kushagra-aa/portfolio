@@ -4,12 +4,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
   h1,
   h3,
   a {
     font-family: Prompt;
     margin: 0.5em;
     margin-left: -3rem;
+    @include desktop {
+      margin: 7px;
+    }
   }
   h1 {
     color: map-get($hire, title);
@@ -17,13 +27,15 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 99.3%;
-    /* or 18px */
 
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.15em;
     text-transform: capitalize;
+    @include desktop {
+      font-size: 38px;
+    }
   }
   h3 {
     color: map-get($hire, sub);
@@ -40,7 +52,20 @@
     text-align: center;
     letter-spacing: 0.15em;
     text-transform: capitalize;
+    @include desktop {
+      font-size: 18px;
+      width: 30rem;
+    }
   }
+  h1,
+  h3 {
+    @include desktop {
+      position: relative;
+      left: -10rem;
+      top: 1rem;
+    }
+  }
+
   a {
     text-decoration: none;
 
@@ -71,6 +96,13 @@
       &:hover {
         background: darken(map-get($hire, btn), 8%);
         color: rgb(39, 39, 39);
+      }
+      @include desktop {
+        width: 170px;
+        height: 63px;
+        position: relative;
+        left: 13rem;
+        top: -4.8rem;
       }
     }
   }

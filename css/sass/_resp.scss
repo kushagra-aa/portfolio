@@ -1,0 +1,9 @@
+// variables-width
+$desktop: 840px;
+
+// functions
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

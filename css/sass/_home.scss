@@ -3,6 +3,10 @@
   .left {
     height: 100vh;
     background-image: url("../media/bgH.png");
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
     .container {
       display: flex;
       height: 100%;
@@ -11,6 +15,9 @@
       position: relative;
       left: -3%;
       top: 21%;
+      @include desktop {
+        width: 100%;
+      }
       #tick {
         position: absolute;
         left: 32%;
@@ -32,6 +39,9 @@
         left: 0%;
         top: 21%;
         text-align: center;
+        @include desktop {
+          left: 15%;
+        }
         h1 {
           white-space: nowrap;
           margin: 1rem;
@@ -49,6 +59,14 @@
           text-align: center;
           letter-spacing: 0.04em;
           text-decoration-line: underline;
+          @include desktop {
+            font-size: 43px;
+            line-height: 122.8%;
+            /* or 53px */
+            text-align: center;
+            letter-spacing: 0.04em;
+            margin-bottom: 2rem;
+          }
         }
         p {
           color: map-get($home, sub);
@@ -65,16 +83,34 @@
           letter-spacing: 0.04em;
           text-decoration-line: underline;
           text-transform: uppercase;
+          @include desktop {
+            font-size: 19px;
+            line-height: 122.8%;
+            /* or 23px */
+
+            letter-spacing: 0.04em;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            width: 679px;
+            position: absolute;
+            left: 29px;
+            text-align: initial;
+          }
         }
       }
-      #scroll {
-        position: absolute;
-        left: 36%;
-        top: 47%;
-        #scroll-ball {
-          animation: scroller 1.7s ease 0s infinite;
-          &:hover {
-            animation: none;
+      a {
+        #scroll {
+          position: absolute;
+          left: 36%;
+          top: 47%;
+          #scroll-ball {
+            animation: scroller 1.7s ease 0s infinite;
+            &:hover {
+              animation: none;
+            }
+          }
+          @include desktop {
+            left: 32%;
           }
         }
       }

@@ -13,8 +13,16 @@
   box-shadow: 3px 0 12px -2px #535353;
   transition: all 1s ease-in-out;
   overflow: hidden;
+  @include desktop {
+    width: 13rem;
+  }
   #me {
     #me-pic {
+      @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       img {
         transition: all 1s ease-in-out;
 
@@ -24,11 +32,38 @@
 
         border: 1px solid black;
         border-radius: 50%;
+        @include desktop {
+          height: 5rem;
+          width: 5rem;
+        }
       }
     }
     #name,
     #sub {
       display: none;
+      @include desktop {
+        display: inline-block;
+        font-family: Roboto;
+        line-height: 122.8%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #name {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0.5rem;
+    }
+    #sub {
+      font-weight: 300;
+      font-size: 14px;
     }
   }
   button {
@@ -42,13 +77,23 @@
       height: 1.5rem;
       width: 1.5rem;
     }
+    @include desktop {
+      display: none;
+    }
   }
   ul {
     list-style: none;
+    @include desktop {
+      margin-top: 5rem;
+    }
     li {
       display: flex;
       flex-direction: column;
       line-height: 3rem;
+      @include desktop {
+        flex-direction: row;
+        align-items: center;
+      }
       a {
         transition: all 1s ease-in-out;
 
@@ -62,8 +107,13 @@
           color: black;
           font-family: "Rajdhani", sans-serif;
           text-transform: uppercase;
-          font-size: 15px;
+          font-size: 16px;
           display: none;
+          @include desktop {
+            display: inline;
+            letter-spacing: 0.04em;
+            text-decoration-line: underline;
+          }
         }
       }
       // svg {
@@ -80,6 +130,11 @@
     bottom: -48px;
     left: 88px;
     display: none;
+    @include desktop {
+      left: 106px;
+      bottom: -23rem;
+      display: inline;
+    }
   }
 }
 .open {
