@@ -4,7 +4,10 @@
     height: 100vh;
     background-image: url("../media/bgH.png");
     @include desktop {
+      width: 89%;
       display: flex;
+      flex-direction: column;
+      justify-items: center;
       align-items: center;
     }
     .container {
