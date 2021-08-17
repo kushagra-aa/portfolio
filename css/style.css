@@ -1825,4 +1825,8 @@ body section {
 body img {
   display: none;
 }
+
+a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
