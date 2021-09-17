@@ -389,8 +389,6 @@
   .side-bar ul li a .nav-itm {
     display: inline;
     letter-spacing: 0.04em;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
   }
 }
 
