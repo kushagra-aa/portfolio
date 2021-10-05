@@ -1,0 +1,69 @@
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot-collision {
+  // realtive position to make before and after elements absolute
+  position: relative;
+}
+.dot-collision,
+.dot-collision::after,
+.dot-collision::before {
+  // giving size and shape to the dots
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  //   color for the dots
+  background-color: map-get($light-title, p-title);
+}
+.dot-collision::before,
+.dot-collision::after {
+  // making the dots on left and right
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  transition: all 1s ease-in-out;
+}
+
+.dot-collision::before {
+  // giving position to the element on left
+  left: -1rem;
+
+  animation: dotCollisionBefore 8s infinite ease-in;
+}
+
+.dot-collision::after {
+  // giving position to the element on right
+  left: 1rem;
+  animation: dotCollisionAfter 8s infinite ease-in;
+  //   delay it to make dot wait for the first dot to collide
+  animation-delay: 4s;
+}
+
+@keyframes dotCollisionBefore {
+  0%,
+  50%,
+  75%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4rem);
+    background: darken($color: map-get($light-title, p-title), $amount: 10);
+  }
+}
+
+@keyframes dotCollisionAfter {
+  0%,
+  50%,
+  75%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(4rem);
+    background: lighten($color: map-get($light-title, p-title), $amount: 10);
+  }
+}

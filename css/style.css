@@ -540,6 +540,115 @@
   }
 }
 
+.dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dot-collision {
+  position: relative;
+}
+
+.dot-collision,
+.dot-collision::after,
+.dot-collision::before {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: #005f5f;
+}
+
+.dot-collision::before,
+.dot-collision::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.dot-collision::before {
+  left: -1rem;
+  -webkit-animation: dotCollisionBefore 8s infinite ease-in;
+          animation: dotCollisionBefore 8s infinite ease-in;
+}
+
+.dot-collision::after {
+  left: 1rem;
+  -webkit-animation: dotCollisionAfter 8s infinite ease-in;
+          animation: dotCollisionAfter 8s infinite ease-in;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes dotCollisionBefore {
+  0%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+    background: #002c2c;
+  }
+}
+
+@keyframes dotCollisionBefore {
+  0%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+    background: #002c2c;
+  }
+}
+
+@-webkit-keyframes dotCollisionAfter {
+  0%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+    background: #009292;
+  }
+}
+
+@keyframes dotCollisionAfter {
+  0%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+    background: #009292;
+  }
+}
+
 .home {
   width: 100%;
 }
@@ -1237,6 +1346,28 @@
   .projects #pro2 .pro-desc h6 {
     margin: 8px;
   }
+}
+
+.projects .else {
+  color: #004d4d;
+  font-family: Rajdhani;
+  font-size: 17px;
+  letter-spacing: 0.55em;
+  text-transform: capitalize;
+}
+
+@media (min-width: 840px) {
+  .projects .else {
+    white-space: nowrap;
+  }
+}
+
+.projects .more {
+  margin-top: 2em;
+  width: 89%;
+  text-align: center;
+  padding: 2em;
+  border-top: 2px solid #b7cfbb;
 }
 
 .hire {
