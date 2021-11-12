@@ -9,6 +9,11 @@
     justify-items: center;
     align-items: center;
   }
+  .proj-con {
+    @include desktop {
+      width: 707px;
+    }
+  }
   h2 {
     color: map-get($light-title, p-title);
     font-family: Prompt;

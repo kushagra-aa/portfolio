@@ -1163,6 +1163,12 @@
   }
 }
 
+@media (min-width: 840px) {
+  .projects .proj-con {
+    width: 707px;
+  }
+}
+
 .projects h2 {
   color: #005f5f;
   font-family: Prompt;
