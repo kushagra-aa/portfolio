@@ -1964,4 +1964,39 @@ body img {
 a {
   text-decoration: none;
 }
+
+.new-site-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100vw;
+  padding: 0.8em 2em;
+  padding-right: 5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: roboto, 'sans-serif';
+  letter-spacing: 1px;
+  line-height: 150%;
+  background: #415143;
+  color: #51ff82;
+  -webkit-box-shadow: 3px 0 10px 0 #00000048;
+          box-shadow: 3px 0 10px 0 #00000048;
+}
+
+@media (min-width: 840px) {
+  .new-site-container {
+    font-size: 1.2em;
+  }
+}
+
+.new-site-container span {
+  font-size: 1.5em;
+}
+
+@media (min-width: 840px) {
+  .new-site-container span {
+    font-size: 1.7em;
+  }
+}
 /*# sourceMappingURL=style.css.map */

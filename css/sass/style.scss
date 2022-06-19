@@ -16,7 +16,6 @@
 @import "footer";
 * {
   font-family: "Rajdhani", sans-serif;
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,4 +38,30 @@ body {
 }
 a {
   text-decoration: none;
+}
+.new-site-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100vw;
+  padding: 0.8em 2em ;
+  padding-right: 5em;
+  font-size: 1em;
+  @include desktop{
+    font-size: 1.2em;
+  }
+  font-weight: 500;
+  font-family: roboto, 'sans-serif';
+  letter-spacing: 1px;
+  line-height: 150%;
+  span{
+    font-size: 1.5em;
+    @include desktop {
+      font-size: 1.7em;
+    }
+  }
+  background: map-get($light, skill );
+  color: map-get($light-title, s-title  );
+  box-shadow: 3px 0 10px 0 #00000048;
 }
