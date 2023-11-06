@@ -61,6 +61,10 @@ a {
       font-size: 1.7em;
     }
   }
+  a{
+  color: map-get($light-title, s-title  );
+  text-decoration: underline;
+  }
   background: map-get($light, skill );
   color: map-get($light-title, s-title  );
   box-shadow: 3px 0 10px 0 #00000048;
